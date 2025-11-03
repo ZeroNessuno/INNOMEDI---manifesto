@@ -17,11 +17,11 @@
       background-color: #ffffff;
       color: #111111;
       font-family: "Libre Baskerville", "Georgia", serif;
-      margin: 6rem auto;
-      max-width: 750px;
+      margin: 5rem auto;
+      max-width: 740px;
       line-height: 1.9;
-      font-size: 1.2rem;
-      padding: 0 2rem;
+      font-size: 1.18rem;
+      padding: 0 1.8rem;
       text-align: justify;
       word-spacing: 0.05em;
     }
@@ -29,31 +29,31 @@
     /* --- TITOLI --- */
     h1 {
       text-align: center;
-      font-size: 2.8rem;
+      font-size: 2.7rem;
       font-weight: 700;
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.3rem;
       text-transform: uppercase;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.05em;
     }
 
     h2 {
       text-align: center;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 400;
       margin-top: 0;
-      margin-bottom: 4.5rem;
+      margin-bottom: 4rem;
       text-transform: uppercase;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
     }
 
     h3 {
-      font-size: 1.15rem;
+      font-size: 1.1rem;
       text-transform: uppercase;
-      margin-top: 5rem;
+      margin-top: 4.5rem;
       margin-bottom: 2rem;
       text-align: center;
       font-weight: 600;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.04em;
     }
 
     /* --- TESTO --- */
@@ -61,6 +61,7 @@
       white-space: pre-wrap;
       font-family: inherit;
       margin: 0;
+      hyphens: auto;
     }
 
     p {
@@ -75,25 +76,35 @@
       margin-top: 4.5rem;
       text-transform: uppercase;
       letter-spacing: 0.15em;
-      font-size: 1.2rem;
+      font-size: 1.15rem;
     }
 
-    /* --- STAMPA --- */
-    @media print {
-      body {
-        margin: 4cm;
-        font-size: 14pt;
-        color: #000;
-      }
+    /* --- SWITCH LINGUA / DOWNLOAD --- */
+    .lang-switch {
+      text-align: left;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .download-link {
+      text-align: right;
+      font-size: 0.9rem;
+      margin-top: -1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .download-link a, .lang-switch a {
+      text-decoration: none;
+      color: #444;
     }
 
     /* --- VERSIONE MOBILE --- */
     @media (max-width: 700px) {
       body {
-        margin: 3rem auto;
+        margin: 2.5rem auto;
         padding: 0 1.2rem;
         font-size: 1rem;
-        line-height: 1.8;
+        line-height: 1.85;
       }
 
       h1 {
@@ -113,9 +124,18 @@
       }
 
       p.final {
-        font-size: 1.1rem;
-        margin-top: 4rem;
+        font-size: 1rem;
+        margin-top: 3.5rem;
         letter-spacing: 0.12em;
+      }
+    }
+
+    /* --- STAMPA --- */
+    @media print {
+      body {
+        margin: 4cm;
+        font-size: 14pt;
+        color: #000;
       }
     }
   </style>
@@ -126,8 +146,8 @@
     <a href="english.html">EN</a> | <strong>IT</strong>
   </div>
 
-  <div class="download-link" style="text-align: right; font-size: 0.9rem; margin-top: -1.5rem; margin-bottom: 2rem;">
-    <a href="#" onclick="window.print()" style="text-decoration: none; color: #444;">Scarica come PDF</a>
+  <div class="download-link">
+    <a href="#" onclick="window.print()">Scarica come PDF</a>
   </div>
 
   <h1>In nome di</h1>
@@ -228,6 +248,7 @@ sulle fosse comuni piene]
   <p class="final">VUOI MORIRE O RINASCERE?</p>
 </body>
 </html>
+
 
 
 
